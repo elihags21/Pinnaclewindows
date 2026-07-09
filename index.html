@@ -82,7 +82,12 @@ src="https://www.facebook.com/tr?id=967599729631477&ev=PageView&noscript=1"/>
           <div class="field"><label>Full Address</label><input name="address" placeholder="Street address, city, state, ZIP" required></div>
           <div class="field"><label>Age of Your Windows</label><select name="window_age" required><option value="">Select one</option><option>Less than 10 years old</option><option>10–20 years old</option><option>20–30 years old</option><option>30+ years old</option><option>Not sure</option></select></div>
           <div class="field"><label>What are you interested in?</label><select name="project"><option>Replacement windows</option><option>Entry door</option><option>Patio door</option><option>Financing options</option><option>Not sure yet</option></select></div>
-          <button class="submit" type="submit">Request My Free Estimate</button>
+          <button
+  class="submit"
+  type="submit"
+  onclick="if (typeof fbq === 'function') { fbq('track','Lead'); }">
+  Request My Free Estimate
+</button>
           <div class="privacy">No spam. Just a quick follow-up about your project.</div>
         </form>
       </div>
